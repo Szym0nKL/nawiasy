@@ -51,12 +51,13 @@ def generate_bracket(deepness):
     s += ')' * c
     return s
 
-for n in range(1, 1000):
-    b = generate_bracket(5)
-    if len(b) > 500:
-        continue
-    if not bracket_validation(b) or not bracket_deepness(b) == 5:
-        print(f'Error at {n}:\n    {b}\n    Valid: {bracket_validation(b)}\n    Deepness: {bracket_deepness(b)}')
-        break
-else: 
-    print('No issues found.')
+# Testowanie funkcji
+#for n in range(1, 1000):
+#    b = generate_bracket(5)
+#    if len(b) > 500:
+#        continue
+#    if not bracket_validation(b) or not bracket_deepness(b) == 5:
+#        print(f'Error at {n}:\n    {b}\n    Valid: {bracket_validation(b)}\n    Deepness: {bracket_deepness(b)}')
+#        break
+#else: 
+#    print('No issues found.')
