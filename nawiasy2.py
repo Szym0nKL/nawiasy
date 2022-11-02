@@ -7,7 +7,6 @@ def generate_bracket(opens):
     s = '('
     o = 1
     c = 0
-    i = 0
     while o < opens:
         r = randint(0, 1)
         if r and not c >= o:
